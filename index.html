@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Авторизация на сайте SCP</h1>
+    <form id="authForm">
+        Логин:<br><input type="text" id="username" required><br>
+        Пароль:<br><input type="password" id="password" required><br>
+        <button type="submit">Войти</button>
+    </form>
+
+    <script>
+        document.getElementById('authForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            
+            // Простая проверка (логин: user, пароль: pass)
+            if (username === 'arrara' && password === '50evisinVv') {
+                window.location.href = 'arrara.html';
+            } else {
+                alert('Неверный логин или пароль!');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* Очищаем стили по умолчанию */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; /* Устанавливаем высоту равной высоте окна браузера */
+    font-family: Arial, sans-serif; /* Базовая гарнитура шрифтов */
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;           /* Включаем режим Flexbox */
+    flex-direction: column;  /* Располагаем элементы столбцом */
+    justify-content: center; /* По вертикали центрируем элементы */
+    align-items: center;     /* По горизонтали центрируем элементы */
+    min-height: 100vh;       /* Минимальная высота тела документа равна высоте окна */
+    
+}
+
+#authForm { /* Оформление формы */
+    max-width: 300px; /* Ограничиваем максимальную ширину формы */
+    text-align: center; /* Тексты и кнопки будут выровнены по центру */
+}
+
+#authForm input[type=text],
+#authForm input[type=password] {
+    display: block;          
+    width: 100%;             
+    margin-bottom: 10px;     
+    padding: 8px;            
+    border-radius: 4px;      
+    border: 1px solid rgba(255, 255, 255); /* Тонкая белая граница с прозрачностью */
+    background-color: rgba(189, 189, 189, 0.1); /* Прозрачность для затемнения */
+    color: white;            
+    outline: none;           /* Убираем выделение при фокусировке */
+    transition: all 0.3s ease; /* Плавный переход состояний */
+}
+
+#authForm input[type=text]:focus,
+#authForm input[type=password]:focus {
+    border-color: rgba(255, 255, 255, 0.6); /* Ярче при фокусировке */
+    background-color: rgba(0, 0, 0, 0.2); /* Немного светлее при фокусе */
+}
+
+#authForm text {
+    color: rgb(255, 255, 255);
+}
+
+#authForm button {
+    cursor: pointer;                     /* Изменяем вид курсора на руку */
+    background-color: #000000;           /* Чёрный цвет фона кнопки */
+    color: rgb(255, 255, 255);          /* Белый текст */
+    border: 3px solid white;             /* Белая обводка толщиной 3 пикселя */
+    padding: 15px 30px;                  /* Увеличенное заполнение для большего размера */
+    border-radius: 25px;                 /* Сохраняется округлость углов */
+    transition: all .3s ease-in-out;     /* Плавный переход состояния */
+    font-size: 15px;                     /* Размер шрифта увеличен для лучшего восприятия */
+}
+
+#authForm button:hover {
+    background-color: #ffffff; /* Темнее при наведении */
+    color: black;
+}
+
+h1 {
+    margin-bottom: 20px; /* Добавляем пространство между заголовком и формой */
+}
