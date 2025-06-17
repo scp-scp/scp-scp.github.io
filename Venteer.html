@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>YATAVO</title>
+    <link rel="stylesheet" href="./arrara.css">
+</head>
+<body>
+    <h1>Добро пожаловать, Venteer | Ислом</h1>
+    <h2>Ваша должность: Сотрудник СБ(Служба безопастности)  </h2>
+    <h2>Ваше звание: Капитан СБ </h2>
+
+    <h1 id="keycard">Ваша ключ карта: </h1>
+
+    
+
+    <div> 
+
+        <img src="./img/SScard.png" alt="MTF">
+        <img src="./img/backside.png" alt=""> 
+
+    </div>
+
+
+
+
+
+    <div>
+
+        <button id="callMTF">Вызвать МОГ</button>
+
+        <script>
+            document.getElementById('callMTF').addEventListener('click', function() {
+                alert("Для вызова МОГ позвоните на этот номер: +7 991 856 5005. Скажите ближайший к вам адрес и причину вызова");
+            });
+        </script>
+
+        <button id="callzaxvat">Вызвать группу захвата</button>
+
+        <script>
+            document.getElementById('callzaxvat').addEventListener('click', function() {
+                alert("Группа захвата вызвана и едет к вам");
+            });
+        </script>
+
+    </div>
+
+
+</body>
+</html>

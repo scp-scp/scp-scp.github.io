@@ -26,6 +26,7 @@
             ['arrara', 'arrara.html'], // личный кабинет администратора
             ['Guest', 'guest.html'], 
             ['mamont325', 'mamont325.html'],
+            ['Venteer', 'Venteer.html'], 
         ]);
 
         // Проверка логина и пароля
@@ -37,6 +38,8 @@
             window.location.href = usersPages.get('Guest')
         } else if(username === 'mamont325' && password === 'nigga_life911') {
             window.location.href = usersPages.get('mamont325')
+        } else if(username === 'Venteer' && password === 'islommolsi2011') {
+            window.location.href = usersPages.get('Venteer')
         } else {
             alert('Неверный логин или пароль!');
         }
