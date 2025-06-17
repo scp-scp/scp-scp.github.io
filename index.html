@@ -24,6 +24,7 @@
         const usersPages = new Map([
             ['YATAVO', 'YATAVO.html'], // личный кабинет пользователя 'user'
             ['arrara', 'arrara.html'], // личный кабинет администратора
+            ['Guest', 'guest.html'], 
         ]);
 
         // Проверка логина и пароля
@@ -31,11 +32,19 @@
             window.location.href = usersPages.get('YATAVO');
         } else if(username === 'arrara' && password === '50evisinVv') {
             window.location.href = usersPages.get('arrara');
+        } else if(username === 'Guest' && password === 'pass') {
+            window.location.href = usersPages.get('Guest')
         } else {
             alert('Неверный логин или пароль!');
         }
     });
     </script>
+
+    <a href="./guest.html"><button>Гостевой аккаунт</button></a>
+
+
+
+
 
 </body>
 </html>

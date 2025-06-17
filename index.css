@@ -71,3 +71,21 @@ body {
 h1 {
     margin-bottom: 20px; /* Добавляем пространство между заголовком и формой */
 }
+
+a > button {
+    cursor: pointer;                     /* Изменяем вид курсора на руку */
+    background-color: #000000;           /* Чёрный цвет фона кнопки */
+    color: rgb(255, 255, 255);          /* Белый текст */
+    border: 3px solid white;             /* Белая обводка толщиной 3 пикселя */
+    padding: 15px 30px;                  /* Увеличенное заполнение для большего размера */
+    border-radius: 25px;                 /* Сохраняется округлость углов */
+    transition: all .3s ease-in-out;     /* Плавный переход состояния */
+    font-size: 15px;        /* Изменение курсора при наведении */
+    margin-top: 20px;
+}
+
+
+a > button:hover {
+    background-color: #ffffff; /* Темнее при наведении */
+    color: black;
+}

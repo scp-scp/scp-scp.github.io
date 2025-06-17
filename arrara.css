@@ -47,11 +47,29 @@ button {
     border-radius: 25px;                 /* Сохраняется округлость углов */
     transition: all .3s ease-in-out;     /* Плавный переход состояния */
     font-size: 15px;                     /* Размер шрифта увеличен для лучшего восприятия */
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 button:hover {
     background-color: #ffffff; /* Темнее при наведении */
     color: black;
+}
+
+
+a {
+    cursor: pointer;                     /* Изменяем вид курсора на руку */
+    background-color: #000000;           /* Чёрный цвет фона кнопки */
+    color: rgb(255, 255, 255);          /* Белый текст */
+    border: 3px solid white;             /* Белая обводка толщиной 3 пикселя */
+    padding: 15px 30px;                  /* Увеличенное заполнение для большего размера */
+    border-radius: 25px;                 /* Сохраняется округлость углов */
+    transition: all .3s ease-in-out;     /* Плавный переход состояния */
+    font-size: 15px;                     /* Размер шрифта увеличен для лучшего восприятия */
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
