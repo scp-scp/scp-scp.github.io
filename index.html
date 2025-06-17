@@ -14,19 +14,28 @@
     </form>
 
     <script>
-        document.getElementById('authForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Предотвращаем отправку формы
+    document.getElementById('authForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // предотвратим обычную отправку формы
 
-            const username = document.getElementById('username').value.trim();
-            const password = document.getElementById('password').value.trim();
-            
-            // Простая проверка (логин: user, пароль: pass)
-            if (username === 'arrara' && password === '50evisinVv') {
-                window.location.href = 'arrara.html';
-            } else {
-                alert('Неверный логин или пароль!');
-            }
-        });
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value.trim();
+
+        // Список пользователей и соответствующих им персональных страниц
+        const usersPages = new Map([
+            ['YATAVO', 'YATAVO.html'], // личный кабинет пользователя 'user'
+            ['arrara', 'arrara.html'], // личный кабинет администратора
+        ]);
+
+        // Проверка логина и пароля
+        if(username === 'YATAVO' && password === 'yatavo817715') {
+            window.location.href = usersPages.get('YATAVO');
+        } else if(username === 'arrara' && password === '50evisinVv') {
+            window.location.href = usersPages.get('arrara');
+        } else {
+            alert('Неверный логин или пароль!');
+        }
+    });
     </script>
+
 </body>
 </html>

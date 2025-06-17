@@ -1,0 +1,40 @@
+/* Очищаем стили по умолчанию */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; /* Устанавливаем высоту равной высоте окна браузера */
+    font-family: Arial, sans-serif; /* Базовая гарнитура шрифтов */
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;           /* Включаем режим Flexbox */
+    flex-direction: column;  /* Располагаем элементы столбцом */
+    justify-content: center; /* По вертикали центрируем элементы */
+    align-items: center;     /* По горизонтали центрируем элементы */
+    min-height: 100vh;       /* Минимальная высота тела документа равна высоте окна */
+    
+}
+
+
+h1 {
+    margin-bottom: 20px; /* Добавляем пространство между заголовком и формой */
+}
+
+img {
+    width: 350px;   /* Ширина изображения */
+    height: auto;   /* Автоматически масштабирует высоту пропорционально ширине */
+}
+
+#keycard {
+    margin-top: 80px;
+}
+
+
