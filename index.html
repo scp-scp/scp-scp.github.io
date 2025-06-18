@@ -15,18 +15,19 @@
 
     <script>
     document.getElementById('authForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // предотвратим обычную отправку формы
+        event.preventDefault(); 
 
         const username = document.getElementById('username').value.trim();
         const password = document.getElementById('password').value.trim();
 
-        // Список пользователей и соответствующих им персональных страниц
+        
         const usersPages = new Map([
-            ['YATAVO', 'deU-62so.html'], // личный кабинет пользователя 'user'
-            ['arrara', 'uL-TGiQ7.html'], // личный кабинет администратора
+            ['YATAVO', '_a_wEA5FF8qDi0d.html'], 
+            ['arrara', 'J04KT_kp2LOO_Fy.html'], 
             ['Guest', 'guest.html'], 
-            ['mamont325', 'P0i3G-yf.html'],
-            ['Venteer', 'T4Z-iq0o.html'], 
+            ['mamont325', '3_TApp50ExdGLzf.html'],
+            ['Venteer', 'yhXJ3Y7dWYLQ_XH.html'],
+            ['pechenka900', '7pBGLUplUK_aAy4.html'] 
         ]);
 
         // Проверка логина и пароля
@@ -40,6 +41,8 @@
             window.location.href = usersPages.get('mamont325')
         } else if(username === 'Venteer' && password === 'islommolsi2011') {
             window.location.href = usersPages.get('Venteer')
+        } else if(username === 'pechenka900' && password === 'sffVJ_OYqTTpWBJT0wXra_') {
+            window.location.href = usersPages.get('pechenka900')
         } else {
             alert('Неверный логин или пароль!');
         }
