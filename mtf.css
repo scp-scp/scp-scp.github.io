@@ -15,10 +15,7 @@ html, body {
 }
 
 body {
-    display: flex;           /* Включаем режим Flexbox */
-    flex-direction: column;  /* Располагаем элементы столбцом */
-    justify-content: center; /* По вертикали центрируем элементы */
-    align-items: center;     /* По горизонтали центрируем элементы */
+        /* По горизонтали центрируем элементы */
     min-height: 100vh;       /* Минимальная высота тела документа равна высоте окна */
     
 }
@@ -28,15 +25,10 @@ h1 {
     margin-bottom: 20px; /* Добавляем пространство между заголовком и формой */
 }
 
-img {
-    width: 350px;   /* Ширина изображения */
-    height: auto;   /* Автоматически масштабирует высоту пропорционально ширине */
-}
 
-#keycard {
-    margin-top: 80px;
+button:active {
+    transform: scale(0.9); /* Немного уменьшаем размер при нажатии */
 }
-
 
 button {
     cursor: pointer;                     /* Изменяем вид курсора на руку */
@@ -46,10 +38,8 @@ button {
     padding: 15px 30px;                  /* Увеличенное заполнение для большего размера */
     border-radius: 25px;                 /* Сохраняется округлость углов */
     transition: all .3s ease-in-out;     /* Плавный переход состояния */
-    font-size: 15px;                     /* Размер шрифта увеличен для лучшего восприятия */
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    font-size: 15px; 
+    margin-top: 15px;                    /* Размер шрифта увеличен для лучшего восприятия */
 }
 
 button:hover {
@@ -57,7 +47,28 @@ button:hover {
     color: black;
 }
 
+h1 {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
 
+h2 { 
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h3 {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+h4 {
+    margin-left: 60px;
+    margin-right: 20px;
+}
 
 
 
